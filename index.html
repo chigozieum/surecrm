@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SureCRM Agency - Houston, Texas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div class="logo">SureCRM</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+          <li><a href="#services" onclick="scrollToSection('services')">Services</a></li>
+          <li><a href="#blog" onclick="scrollToSection('blog')">Blog</a></li>
+          <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button class="login-button" onclick="showLoginForm()">Login</button>
+        <button class="signup-button" onclick="showSignupForm()">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to SureCRM Agency</h2>
+      <p>Empower your business with our top-notch CRM solutions. We specialize in creating customized solutions that perfectly fit your needs.</p>
+      <p>From seamless data migration to expert training and support, we've got you covered. Explore our services and take your business to new heights.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>We offer a wide range of services to meet your CRM needs:</p>
+      <ul>
+        <li><strong>Custom CRM Development:</strong> Tailored solutions for your unique business requirements.</li>
+        <li><strong>CRM Integration:</strong> Seamless integration with your existing systems.</li>
+        <li><strong>Data Migration:</strong> Hassle-free transfer of your data to our CRM platform.</li>
+        <li><strong>Training and Support:</strong> Expert training and ongoing support to ensure success.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <h2>Latest Blog Posts</h2>
+
+      <article class="blog-post">
+        <h3>Exploring the Future of CRM</h3>
+        <p class="post-info">Published on January 15, 2023 by John Doe</p>
+        <p>Discover the emerging trends and technologies that will shape the future of Customer Relationship Management.</p>
+      </article>
+      
+      <article class="blog-post">
+        <h3>The Importance of Data Security in CRM</h3>
+        <p class="post-info">Published on February 5, 2023 by Jane Smith</p>
+        <p>Learn why robust data security measures are crucial for maintaining trust and compliance in CRM systems.</p>
+      </article>
+
+      <article class="blog-post">
+        <h3>Maximizing CRM Integration for Business Growth</h3>
+        <p class="post-info">Published on March 20, 2023 by Alex Johnson</p>
+        <p>Explore strategies to seamlessly integrate CRM solutions into your business processes for optimal growth and efficiency.</p>
+      </article>
+
+      <article class="blog-post">
+        <h3>Best Practices for CRM Data Migration</h3>
+        <p class="post-info">Published on April 10, 2023 by Emily Brown</p>
+        <p>Ensure a smooth transition when migrating your data to a new CRM platform with these best practices and tips.</p>
+      </article>
+
+      <article class="blog-post">
+        <h3>Providing Exceptional Customer Support with CRM</h3>
+        <p class="post-info">Published on May 5, 2023 by Michael Davis</p>
+        <p>Learn how to leverage CRM tools to deliver outstanding customer support and enhance customer satisfaction.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like to discuss your CRM needs, feel free to reach out to us:</p>
+    
+      <address>
+        <strong>SureCRM Agency</strong><br>
+        123 Main Street, Suite 456<br>
+        Houston, TX 77001<br>
+        Phone: (123) 456-7890<br>
+        Email: info@surecrmagency.com
+      </address>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      &copy; 2023 SureCRM Agency - Houston, Texas
+    </div>
+  </footer>
+
+  <div class="overlay" id="loginOverlay" onclick="hideForms()"></div>
+  <div class="login-form" id="loginForm">
+    <span class="close-button" onclick="hideForms()">&times;</span>
+    <!-- Your login form content goes here -->
+  </div>
+  <div class="signup-form" id="signupForm">
+    <span class="close-button" onclick="hideForms()">&times;</span>
+    <!-- Your sign-up form content goes here -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
